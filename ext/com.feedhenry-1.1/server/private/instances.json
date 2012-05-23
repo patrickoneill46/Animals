@@ -1,0 +1,34 @@
+[{
+  "fields": {
+    "accessType": "",
+    "collapsed": false,
+    "color": "",
+    "config": {
+      "icon": {"small": "default"},
+      "preview": {"device": "iphone_4"}
+    },
+    "containerCriteria": "",
+    "description": "Pets",
+    "disabled": false,
+    "discover": false,
+    "dock": "",
+    "fixedPos": false,
+    "height": 480,
+    "iconLarge": "",
+    "iconSmall": "",
+    "mobileFullScreen": false,
+    "origin": "",
+    "overrides": {},
+    "params": {},
+    "prefsEditable": false,
+    "ratingData": {},
+    "screenShot": "",
+    "sharable": false,
+    "sizeEditable": false,
+    "title": "Animals",
+    "titleEditable": false,
+    "type": "",
+    "width": 320
+  },
+  "sharing": []
+}]

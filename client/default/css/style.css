@@ -1,0 +1,67 @@
+body {
+  font-family:arial, sans-serif;
+  font-size:14px;
+}
+
+.settings{
+  background-image: url(../images/settings.png);
+  background-size:100% 100%;
+}
+
+.twitterIcon{
+  background-image: url(../images/twitter.png) !important;
+}
+
+.logo {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  max-height: 45px;
+  max-width: 100%
+}
+
+.dogIcon:active .dogIcon:hover, .catIcon:active, .catIcon:hover, .farmIcon:active, .farmIcon:hover,.reptileIcon:active, .reptileIcon:hover, .furryIcon:active, .furryIcon:hover, .horseIcon:active, .horseIcon:hover 
+{
+  opacity: 0.5;  
+}
+
+.tileIcon:active, .tileIcon:hover{
+  opacity: 0.5;  
+}
+
+.detailphoto{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+x-toolbar-dummy{
+  background-image: linear-gradient(top,#5A81AF 0,#354F6E 2%,#192533 100%) !important;
+  background-image: -webkit-linear-gradient(#63B4EC, #177CC2 2%, #105483) !important;
+  background-color: #1468A2;
+  border-color: black;
+}
+
+x-toolbar{
+  background-image: linear-gradient(top,#5A81AF 0,#354F6E 2%,#192533 100%) !important;
+  background-image: -webkit-gradient(
+    linear,
+  	left bottom,
+  	left top,
+  	color-stop(0.24, rgb(196,75,19)),
+  	color-stop(0.62, rgb(235,75,47)),
+  	color-stop(0.81, rgb(191,23,23))
+  );
+  background-color: #1468A2;
+  border-color: black;
+}
+
+x-button,x-tabbar{
+  background-image: -webkit-gradient(
+    linear,
+  	left bottom,
+  	left top,
+  	color-stop(0.24, rgb(196,75,19)),
+  	color-stop(0.62, rgb(235,75,47)),
+  	color-stop(0.81, rgb(191,23,23))
+  );  
+}
