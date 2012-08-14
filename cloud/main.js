@@ -27,12 +27,13 @@ exports.getTweets = function(params, callback){
     url: url,
     method: 'GET',
     allowSelfSignedCert: true,
-  }, function (err) {
-    console.log(err)
-  }, function (res){
+  }, function (err,result) {
+    if(err){
+      console.log(err);
+    } else {
     console.log('reslts...', res);
     tweets.body = res;
-    
+    }
   });
   
   return callback(null, {'data': $fh.parse(tweets.body).results});
@@ -94,6 +95,7 @@ exports.getPhotos = function(params, callback){
       console.log(err);
     }else{
       console.log(result);
+      photos.body=result;
     }
   });
   
