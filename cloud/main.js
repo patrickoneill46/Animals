@@ -31,8 +31,8 @@ exports.getTweets = function(params, callback){
     if(err){
       console.log(err);
     } else {
-    console.log('reslts...', res);
-    tweets.body = res;
+    console.log('reslts...', result);
+    tweets.body = result;
     }
   });
   
