@@ -22,7 +22,8 @@ exports.getTweets = function(params, callback){
   var username = 'DublinSPCA';
   var numTweets = 20;
   var url = 'http://search.twitter.com/search.json?q=' + username;
-
+  
+  
   var tweets = $fh.web({
     url: url,
     method: 'GET',
@@ -30,9 +31,11 @@ exports.getTweets = function(params, callback){
   }, function (err,result) {
     if(err){
       console.log(err);
+      return err
     } else {
     console.log('reslts...', result);
-    tweets.body = result;
+    //tweets.body = result;
+      return result;
     }
   });
   
