@@ -25,8 +25,8 @@ Ext.define('Animals.proxy.FHActProxy', {
    * Performs FeedHenry request.
    */
   doRequest: function(operation, callback, scope) {
-    console.log('doRequest');
-    console.log(operation,callback,scope);
+    //console.log('doRequest');
+    //console.log(operation,callback,scope);
     
     var writer  = this.getWriter(),
     me = this,
@@ -44,13 +44,13 @@ Ext.define('Animals.proxy.FHActProxy', {
     }
 
     function doAct(actId, req){
-      console.log('doAct');
+      //console.log('doAct');
       $fh.act( {
         'act' : actId,
         'req':req
       },
       function(res){
-        console.log(res);
+       // console.log(res);
         // Check for a .data or .records property if what we got back isn't an array
         if (!res.length){
           res = res.data || res.records;
