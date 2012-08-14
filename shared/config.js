@@ -108,3 +108,5 @@ var animals =  {
 var news = {
   
 };
+
+exports.animalData = animalData;
