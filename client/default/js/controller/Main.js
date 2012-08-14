@@ -93,6 +93,7 @@ Ext.define('Animals.controller.Main', {
 
       console.log(res);
       var photos = JSON.parse(res.body).photos;
+      console.log(photos);
       var data = [];
       var urls = [];
       var store = Ext.StoreMgr.lookup('Photo');
