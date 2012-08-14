@@ -40,8 +40,6 @@ exports.getTweets = function(params, callback){
       return callback(null, {'data':tweets});
     }
   });
-  
- 
 }
 
 exports.getRecords = function(params, cb){
