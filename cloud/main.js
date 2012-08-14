@@ -27,6 +27,10 @@ exports.getTweets = function(params, callback){
     url: url,
     method: 'GET',
     allowSelfSignedCert: true,
+  }, function (err) {
+    console.log(err)
+  }, function (res){
+    tweets.body = res;
   });
   
   return callback(null, {'data': $fh.parse(tweets.body).results});
