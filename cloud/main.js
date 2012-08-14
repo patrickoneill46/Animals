@@ -30,7 +30,9 @@ exports.getTweets = function(params, callback){
   }, function (err) {
     console.log(err)
   }, function (res){
+    console.log(res);
     tweets.body = res;
+    
   });
   
   return callback(null, {'data': $fh.parse(tweets.body).results});
