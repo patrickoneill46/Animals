@@ -88,10 +88,13 @@ exports.getPhotos = function(params, callback){
     charset: 'UTF-8',
     //contentType: 'application/json',
     contentType: 'text/html'
-  }, function (err){
-    console.log(err);
-  }, function (res){
-    console.log(res);
+  }, function (err, result){
+    
+    if(err){
+      console.log(err);
+    }else{
+      console.log(result);
+    }
   });
   
   return callback(null, {'body': photos.body, url: url});
