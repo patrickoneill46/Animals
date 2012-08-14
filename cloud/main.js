@@ -96,9 +96,11 @@ exports.getPhotos = function(params, callback){
     
     if(err){
       console.log(err);
+      return err;
     }else{
       console.log(result);
-      photos.body=result;
+      //photos.body=result;
+      return result;
     }
   });
   
