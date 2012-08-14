@@ -5,7 +5,7 @@ Ext.define('Animals.view.AdoptList', {
 
   
   config: {
-    id: 'adoptlist',
+    id: 'adoptList',
     store: Ext.StoreMgr.lookup('Animal'),
     
     itemTpl: '<tpl for=".">' +
