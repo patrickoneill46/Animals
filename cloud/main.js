@@ -49,7 +49,7 @@ exports.getRecords = function(params, cb){
 
 
 //function getPhotos(params){
-exports.getPhotos = function(params,callback){
+exports.getPhotos = function(params){
   //REST variables
   var apiKey = '5244a727c10d8cd5ca8696f791f1bb30';
   var userID = '78250827@N08';
