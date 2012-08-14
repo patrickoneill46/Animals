@@ -18,7 +18,7 @@ exports.getAnimals = function(params, callback){
 }
 
 //function getTweets(){
-exports.getTweets = function(params){
+exports.getTweets = function(params, callback){
   var username = 'DublinSPCA';
   var numTweets = 20;
   var url = 'http://search.twitter.com/search.json?q=' + username;
