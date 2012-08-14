@@ -105,7 +105,7 @@ exports.getPhotos = function(params, callback){
     }
   });
   
-  return callback(null, {'body': photos, url: url});
+  return callback(null, {'body': photos.body, url: url});
   
     
   var flickrJSON = 'jsonFlickrApi({"photos":{"page":1, "pages":1, "perpage":100, "total":"2", "photo":[{"id":"7164453364", "owner":"78250827@N08", "secret":"1737862fa2", "server":"5464", "farm":6, "title":"dingo", "ispublic":1, "isfriend":0, "isfamily":0}, {"id":"7164453202", "owner":"78250827@N08", "secret":"814c6d8202", "server":"7099", "farm":8, "title":"pepsi", "ispublic":1, "isfriend":0, "isfamily":0}]}, "stat":"ok"})';
