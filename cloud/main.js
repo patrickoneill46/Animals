@@ -14,7 +14,7 @@ exports.getConfig = function(params, callback) {
 //function getAnimals(){
 exports.getAnimals = function(params, callback){
   //return {'animals': animals};
-  return callback(null,{'animals': animalData});
+  return callback(null, {'animals': animalData});
 }
 
 //function getTweets(){
@@ -29,7 +29,7 @@ exports.getTweets = function(params){
     allowSelfSignedCert: true,
   });
   
-  return {'data': $fh.parse(tweets.body).results};
+  return callback(null, {'data': $fh.parse(tweets.body).results});
 }
 
 exports.getRecords = function(params, cb){
