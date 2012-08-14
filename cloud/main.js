@@ -30,7 +30,7 @@ exports.getTweets = function(params, callback){
   }, function (err) {
     console.log(err)
   }, function (res){
-    console.log(res);
+    console.log('reslts...', res);
     tweets.body = res;
     
   });
