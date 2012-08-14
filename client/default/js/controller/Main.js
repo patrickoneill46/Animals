@@ -70,7 +70,7 @@ Ext.define('Animals.controller.Main', {
         act: 'getAnimals'
       }, function (res){
         
-        var store = Ext.StoreMgr.lookup('Animal');
+        var store = Ext.getStore('Animal');
         store.removeAll();
         store.setData(res.animals);
         //store.setPhotos(photoUrls);
