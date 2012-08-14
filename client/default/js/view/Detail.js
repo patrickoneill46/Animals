@@ -65,7 +65,7 @@ Ext.define('Animals.view.Detail', {
       };
       photos[i] = photo;
     }
-
+    console.log(items.items);
     items.items[1].setItems(photos);
     items.items[1].doLayout();
   }
