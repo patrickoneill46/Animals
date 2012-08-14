@@ -37,7 +37,7 @@ exports.getTweets = function(params, callback){
       console.log('reslts...', result);
       //tweets.body = result;
       //return result;
-      return callback(null, {'data':$fh.parse(tweets.body).results});
+      return callback(null, {'data':$fh.parse(result.body).results});
     }
   });
 }
