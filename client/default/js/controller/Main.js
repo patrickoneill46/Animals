@@ -92,7 +92,7 @@ Ext.define('Animals.controller.Main', {
     }, function (res){
 
       console.log(res);
-      photos = JSON.parse(res.body);
+      photos = JSON.parse(res.body.photos);
       console.log(photos);
       var data = [];
       var urls = [];
