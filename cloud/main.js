@@ -4,17 +4,21 @@
   The contents of the files in the shared directory are also available.
 */
 
-function getConfig(){
+//function getConfig(){
+exports.getConfig = function(params, callback) {
   // The config variable from config.js can be accessed directly from here
-  return {'config': config};   
+  //return {'config': config};   
+  return callback(null, {config: config});
 }
 
-function getAnimals(){
+//function getAnimals(){
+exports.getAnimals = function(params, callback){
   //return {'animals': animals};
   return {'animals': animalData};
 }
 
-function getTweets(){
+//function getTweets(){
+exports.getTweets = function(params, callback){
   var username = 'DublinSPCA';
   var numTweets = 20;
   var url = 'http://search.twitter.com/search.json?q=' + username;
@@ -28,7 +32,7 @@ function getTweets(){
   return {'data': $fh.parse(tweets.body).results};
 }
 
-getRecords = function(params, cb){
+exports.getRecords = function(params, cb){
   var records = [
     {
       Name : 'John',
@@ -44,8 +48,8 @@ getRecords = function(params, cb){
 
 
 
-function getPhotos(params){
-  
+//function getPhotos(params){
+exports.getPhotos = function(params,callback){
   //REST variables
   var apiKey = '5244a727c10d8cd5ca8696f791f1bb30';
   var userID = '78250827@N08';
@@ -86,4 +90,4 @@ function getPhotos(params){
   var flickrJSON = 'jsonFlickrApi({"photos":{"page":1, "pages":1, "perpage":100, "total":"2", "photo":[{"id":"7164453364", "owner":"78250827@N08", "secret":"1737862fa2", "server":"5464", "farm":6, "title":"dingo", "ispublic":1, "isfriend":0, "isfamily":0}, {"id":"7164453202", "owner":"78250827@N08", "secret":"814c6d8202", "server":"7099", "farm":8, "title":"pepsi", "ispublic":1, "isfriend":0, "isfamily":0}]}, "stat":"ok"})';
   var HARDurl = 'http://api.flickr.com/services/rest/?format=json&method=flickr.photos.search&api_key=5244a727c10d8cd5ca8696f791f1bb30&user_id=78250827@N08';
   var dingoUrl = 'http://farm6.staticflickr.com/5464/7164453364_1737862fa2_m.jpg';
-}
+};
