@@ -91,7 +91,7 @@ Ext.define('Animals.controller.Main', {
       }
     }, function (res){
 
-      console.log(res);
+      //console.log(res);
       var photos = JSON.parse(res.body).photos;
       console.log(photos);
       var data = [];
