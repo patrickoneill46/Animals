@@ -34,9 +34,9 @@ exports.getTweets = function(params, callback){
       console.log(err);
       return err
     } else {
-    console.log('reslts...', result);
-    //tweets.body = result;
-        //return result;
+      console.log('reslts...', result);
+      //tweets.body = result;
+      //return result;
       return callback(null, {'data':tweets});
     }
   });
