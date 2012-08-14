@@ -14,7 +14,8 @@ exports.getConfig = function(params, callback) {
 //function getAnimals(){
 exports.getAnimals = function(params, callback){
   //return {'animals': animals};
-  return callback(null, {'animals': animalData});
+  var cfg = require("config.js");
+  return callback(null, {'animals': cfg.animalData});
 }
 
 //function getTweets(){
