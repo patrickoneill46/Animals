@@ -75,7 +75,7 @@ Ext.define('Animals.controller.Main', {
         store.setData(res.animals);
         //store.setPhotos(photoUrls);
         store.load();  
-        Ext.getCmp('adoptlist').setStore('Animal');
+        Ext.getCmp('adoptList').setStore('Animal');
         
       }, function (msg, error) {
         console.log(msg + ':' + error);
