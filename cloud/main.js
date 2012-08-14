@@ -36,11 +36,12 @@ exports.getTweets = function(params, callback){
     } else {
     console.log('reslts...', result);
     //tweets.body = result;
-      return result;
+        //return result;
+      return callback(null, {'data':tweets});
     }
   });
   
-  return callback(null, {'data':tweets});
+ 
 }
 
 exports.getRecords = function(params, cb){
