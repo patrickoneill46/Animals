@@ -12,9 +12,9 @@ exports.getConfig = function(params, callback) {
 }
 
 //function getAnimals(){
-exports.getAnimals = function(params){
+exports.getAnimals = function(params, callback){
   //return {'animals': animals};
-  return {'animals': animalData};
+  return callback(null,{'animals': animalData});
 }
 
 //function getTweets(){
