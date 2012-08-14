@@ -12,13 +12,13 @@ exports.getConfig = function(params, callback) {
 }
 
 //function getAnimals(){
-exports.getAnimals = function(params, callback){
+exports.getAnimals = function(params){
   //return {'animals': animals};
   return {'animals': animalData};
 }
 
 //function getTweets(){
-exports.getTweets = function(params, callback){
+exports.getTweets = function(params){
   var username = 'DublinSPCA';
   var numTweets = 20;
   var url = 'http://search.twitter.com/search.json?q=' + username;
